@@ -1,0 +1,3 @@
+fallback=Mwan3
+EN=Mwan3
+PL=Mwan3

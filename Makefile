@@ -36,7 +36,7 @@ define Package/plugin-gargoyle-mwan3/postinst
 #!/bin/sh
 
 if [ -z "$${IPKG_INSTROOT}" ]; then
-	menu_name="mwan3"
+	menu_name="Mwan3"
 	[ -n `which i18n` ] && {
 		mn=$$(i18n-menu gargoyle.display.connection_mwan3)
 		if [ -n "$$mn" ] ; then
@@ -44,8 +44,8 @@ if [ -z "$${IPKG_INSTROOT}" ]; then
 		fi
 	}
 	uci set gargoyle.display.connection_mwan3="$$menu_name"
-	uci set gargoyle.scripts.connection_mwan3='mwan3.sh'
-	uci set gargoyle.connection.mwan3='550'
+	uci set gargoyle.scripts.connection_mwan3="mwan3.sh"
+	uci set gargoyle.connection.mwan3="550"
 	uci commit
 fi
 endef
