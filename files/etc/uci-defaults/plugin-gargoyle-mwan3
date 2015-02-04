@@ -1,0 +1,6 @@
+#!/bin/sh
+
+uci set gargoyle.display.connection_mwan3="mwan3"
+uci set gargoyle.scripts.connection_mwan3="mwan3.sh"
+uci set gargoyle.connection.mwan3="550"
+uci commit
